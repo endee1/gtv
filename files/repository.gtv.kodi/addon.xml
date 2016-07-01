@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.gtv.kodi" name="gtv repository" version="0.0.6" provider-name="endee1">
+	<extension point="xbmc.addon.repository" name="GTV Repository">
+		<info compressed="false">http://raw.github.com/endee1/gtv/master/addons.xml</info>
+		<checksum>http://raw.github.com/endee1/gtv/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/endee1/gtv/master/files/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>GTV repo Addon</summary>
+		<description>GTV repo Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
