@@ -1,4 +1,0 @@
-V1.0.0
--Many Changes.  Feb 2016
-V0.0.1
--First basic release

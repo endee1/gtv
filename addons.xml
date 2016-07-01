@@ -1,41 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-
-<addon id="Andy.plugin.program.Maintenance" name="[COLOR yellow]Andy[/COLOR] Maintenance" version="1.0.4" provider-name="Andy">
-
-    <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.addon.common" />
-
-        <!-- Maintenance Tool -->
-        <!--<import addon="plugin.video.youtube" />-->
-        <!--<import addon="script.module.metahandler" optional="true" />-->
-        <!--<import addon="script.module.metahandler" />-->
-
-        <!-- Wizard -->
-        <!--<import addon="script.module.addon.common" optional="true" />-->
-        <!--<import addon="script.module.t0mm0.common" optional="true" />-->
-        <!--<import addon="script.module.urlresolver" optional="true" />-->
-
-        <!-- Advanced Setting Setter -->
-        <!--<import addon="script.module.xmltodict" version="0.8.6"/>-->
-        <!--<import addon="script.module.xmltodict" optional="true" />-->
-    </requires>
-
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>executable</provides>
-    </extension>
-
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR yellow]Andy[/COLOR] Maintenance Tool</summary>
-        <description lang="en">Maintenance Tool is your one stop tool for all fixes and information. Addons: \addons Settings: \userdata App Settings: \userdata\addon_data Database: \userdata\Database Media: \userdata\Thumbnails Tweaks: \userdata\Advancedsettings.xml Paths: \userdata\sources.xml Profile: \userdata\profiles\ProfileName</description>
-        <platform>all</platform>
-        <forum></forum>
-        <website>https://raw.githubusercontent.com/halikus/_AndyRepo/master/_repo/</website>
-    </extension>
-
-</addon>
-
 <addon id="repository.gtv.kodi" name="gtv repository" version="0.0.5" provider-name="endee1">
 	<extension point="xbmc.addon.repository" name="GTV Repository">
 		<info compressed="false">http://raw.github.com/endee1/gtv/master/addons.xml</info>
@@ -47,6 +11,38 @@
 		<description>GTV repo Description</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.ftvguide" name="FTV Guide" version="2.0.22" provider-name="rayw1986, bluezed">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0"/>
+		<import addon="script.module.simplejson" version="3.3.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+            <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+
+		<summary lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="en_US">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</summary>
+		<summary lang="es">TV Guide con XMLTV y soporte para streaming</summary>
+		<summary lang="fr">Guide TV avec support du XMLTV et du streaming</summary>
+
+
+
+		<description lang="en">FTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+		<description lang="en_US">TFTV Guide allows you to combine some of your favourite live TV plugins for use with a fully working EPG</description>
+
+		<disclaimer lang="en">FTV Guide is based on the original TV Guide addon by twinther.</disclaimer>
+		<language></language>
+		<platform>all</platform>
+		<license>GPLv2</license>
+		<forum>https://forums.tvaddons.ag/ftv-guide-for-kodi</forum>
+		<source>https://github.com/bluezed/FTV-Guide-Repo</source>
+        <website></website>
+		<email></email>
 	</extension>
 </addon>
 
